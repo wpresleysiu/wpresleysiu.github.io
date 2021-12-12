@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Final Course Project
+Home Barbeque Hero Website
+Share Page
+Author: William Presley
+School/Term: Southern Illinois University, Fall 2021
+Developed: Nov 7, 2021
+Tested: 
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Share</title>
+	<meta name="description" content="Tell us things">
+	<meta name="keywords" content="bbq, barbeque, barbecue, grill, grilling, smoker">
+	<link rel="shortcut icon" href="HBHicon.ico"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="grid_layout">
+<!--Navbar-->
+		<nav id="navbarcontainer">
+			<div class="content">
+				<ul class="links">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="getstart.htm">Getting Started</a></li>
+					<li>
+						<a href="recipes.htm" class="dropdown">Recipes</a>
+						<input type="checkbox" id="dropdown">
+						<label for="dropdown">Recipes</label>
+						<ul>
+							<li><a href="burgerrecipe.htm">Burgers</a></li>
+							<li><a href="porkrecipe.htm">Pulled Pork</a></li>
+							<li><a href="brisketrecipe.htm">Brisket</a></li>
+						</ul>
+					</li>
+					<li><a href="share.htm">Share</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="sharetextbg" class="textbackground"></div>
+<!--Header-->
+		<div id="logo2container">
+			<img id="logo2" src="HBH icon.png" alt="Home Barbeque Hero"/>
+		</div>
+		<div id="shareheader" class="page_name_header">
+			<p>Share</p>
+		</div>
+
+		<div id="shareheader2">
+			<p1>Every recipe is a collaboration</p1><br>
+			<p2>Before the internet, before cookbooks, recipes were passed along from generation to generation and picked up by travelers along the way.  Throughout the centuries, as various cultures spread across the globe, they shared their cooking styles with each other, blended them together, and created new ways to enjoy their food.  American barbeque is blend of cultures dating back to the 16th century when Native Americans shared their foods and cooking techniques with their new Spanish friends, who had brought over their own ingredients, along with cooking styles that had been influenced by their Greek, Jewish, and Middle Eastern friends back in Europe.</p2><br>
+			<p3>Every recipe is a collaboration of countless people around the world throughout all of human history, and we would love for you add to our history by sharing some of your own unique cooking styles with us.</p3>
+		</div>
+<!--Form-->	
+		<div id="share">
+		<form id="share_form" action="response.htm" method="post">
+			<label for="fname">First Name:</label>
+				<input class="inputs" type="text" id="fname" name="fname" required autofocus min="2" max="15">
+			<label for="lname">Last Name:</label>
+				<input class="inputs" type="text" id="lname" name="lname" required min="2" max="15"><br>
+			<label for="email">Email Address:</label>
+				<input class="inputs" type="email" id="email" name="email" required><br>
+			<label for="subj">Subject</label>
+				<select class="inputs" id="subj" name="type" required>
+					<option value="subj1">Recipes</option>
+					<option value="subj2">Meat and Butchery</option>
+					<option value="subj3">Grills and Tools</option>
+					<option value="subj4">Wood and Fire</option>
+					<option value="subj5">Other</option>
+				</select><br>
+			<label for="message">Message:</label>
+			<input class="inputs" type="textarea" id="message" name="message" required min="10" max="300" placeholder="Please share anything you want." ><br>
+<!--buttons-->
+			<input type="submit" class="formbuttons" value="Send">
+			<input type="reset" class="formbuttons">
+		</form>
+		</div>
+
+
+<!--Footer-->
+		<div id="footer">
+			<p>
+				Home Barbeque Hero<br>
+				Created by William Presley at <a href="https://siu.edu/">Southern Illinois University</a>
+			</p>
+		</div>		
+		
+	</div>
+</body>
+</html>

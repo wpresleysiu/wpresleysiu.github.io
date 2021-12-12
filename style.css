@@ -1,0 +1,585 @@
+/* CSS Doc for Home Barbeque Hero Website */
+body {
+	width: auto;
+	max-width: 1920;
+	margin: 0px;
+	background-image: url("woodbg.jpg");
+}
+.grid_layout {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: auto;
+}
+@font-face {
+	font-family: deadsaloon;
+	src: url("DeadSaloon.ttf")
+}
+@font-face {
+	font-family: hellsrider;
+	src: url("HellsRider.ttf")
+}
+@font-face {
+	font-family: typo;
+	src: url("Typo.ttf")
+}
+
+/*Background to make text easier to read*/
+.textbackground {
+	z-index: -10;
+	background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(34,0,0,0.4) 10%, rgba(213,193,169,0.5) 25%, rgba(213,193,169,0.7) 50%, rgba(213,193,169,0.5) 75%, rgba(34,0,0,0.4) 90%, rgba(0,0,0,0) 100%);
+}
+
+
+/*--------------------------------Nav Bar-------------------------------------*/
+#navbarcontainer {
+	grid-column: 1 / span 12;
+	grid-row: 1;
+	z-index: 10;
+	max-height: 40px;
+	padding: .5%;
+	background: radial-gradient(circle at -5% 0, rgba(220,224,13,0.50) 0%, rgba(150,20,0,0.70) 10%, rgba(213,88,5,0.70) 20%, rgba(208,0,0,0.60) 30%, rgba(0,0,0,0.60) 50%, rgba(0,0,0,0.10) 100%);
+}
+.links{
+	display: block;
+	margin: auto;
+}
+.content .links li{
+	list-style: none;
+	float: left;
+}
+.content .links li a,
+.content .links li label{
+	color: #D5C1A9;
+	font-family: "deadsaloon", sans-serif;
+	font-size: 2vw;
+	padding: 5px 15px;
+	border-radius: 5px;
+	text-shadow:
+		-2px 2px 5px black,
+		-1px -1px 0 black,  
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+.content .links li label{
+ 	display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+	background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, black, rgba(222,0,0,1) 95%, rgba(222,200,0,0.5) 100%);
+}
+#navbarcontainer input[type="checkbox"]{
+	display: none;
+}
+.content .links ul{
+	position: absolute;
+	visibility: hidden;
+}
+.content .links li:hover > ul{
+	visibility: visible;
+}
+
+
+
+
+/*-------------------------------Home Page---------------------------------*/
+/*Home Page Header*/
+#headercontainer {
+	grid-column: 1 / span 12;
+	grid-row: 1 / span 5;
+	z-index: 1;
+	background-image: url("coal1920x1440.jpg");
+	background-size: 100%;
+	box-shadow: 0px 0px 15px 10px black;
+}
+#logo {
+	display: block;
+	margin: auto;
+	width: 60%;
+	object-fit: cover;
+}
+
+/*Home Page Buttons*/
+.home_page_buttons{
+	position: relative;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+}
+.home_page_buttons p{
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	text-align: center;
+	color: #D5C1A9;
+	font-family: "deadsaloon", sans-serif;
+	font-size: 2.5vw;
+	text-shadow:
+		-2px 2px 5px black,
+		-1px -1px 0 black,  
+    	1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+#getstartcontainer {
+	grid-column: 3 / span 2;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#getstartimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+#recipescontainer {
+	grid-column: 6 / span 2;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#recipesimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+#sharecontainer {
+	grid-column: 9 / span 2;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#shareimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+/*Story*/
+#storycontainer {
+	grid-column: 1 / span 12;
+	grid-row: 8 /span 2;
+	padding: 3%;
+	background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(34,0,0,0.4) 10%, rgba(213,193,169,0.5) 25%, rgba(213,193,169,0.7) 50%, rgba(213,193,169,0.5) 75%, rgba(34,0,0,0.4) 90%, rgba(0,0,0,0) 100%);
+}
+#storycontainer p {
+	padding: 0 3%;
+	font-size: 120%;
+	font-weight: 600;
+	font-family: "typo", monospace;
+	line-height: 150%
+}
+
+/*----------------------------Subsequent Pages------------------------------*/
+/*Subsequent page headers*/
+#logo2container {
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 2;
+	z-index: 1;
+}
+#logo2 {
+	display: block;
+	width: 75%;
+	object-fit: cover;
+}
+.page_name_header {
+	grid-column: 2 / span 4;
+	grid-row: 2 / span 2;
+	z-index: 2;
+	margin: 0 0 0 5%;
+	position: relative;
+}
+.page_name_header p {
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 35%;
+	text-align: left;
+	color: #D5C1A9;
+	font-family: "deadsaloon", sans-serif;
+	font-size: 4vw;
+	text-shadow:
+		-5px 3px 3px black,
+		-1px -1px 0 black,  
+    	1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black,
+		1.5px -1.5px 3px #922000;
+}
+
+
+
+
+
+/*--------------------------Getting Started Page-----------------------------*/
+/*Text background*/
+#gstextbg {
+	grid-column: 1 / span 12;
+	grid-row: 2 / span 12;
+}
+#gstextbg2 {
+	grid-column: 1 / span 12;
+	grid-row: 10 / span 12;
+}
+/*Headers*/
+#getstartcontent1 {
+	grid-column: 2 / span 10;
+	grid-row: 4;
+	padding: 1%;
+	text-align: center;
+	line-height: 300%
+}
+#getstartcontent1 p1 {
+	font-family: "typo", monospace;
+	font-size: 200%;
+	font-weight: 600;
+}
+#getstartcontent1 p2 {
+	font-family: "typo", monospace;
+	font-size: 120%;
+	font-weight: 600;
+}
+/*What you'll need*/
+#getstartcontent2 {
+	grid-column: 1 / span 2;
+	grid-row: 5;
+	padding: 0 5%;
+}
+#getstartcontent2 p {
+	font-family: "typo", monospace;
+	font-weight: 600;
+}
+.gstext {
+	padding: 1% 5%;
+	font-family: "typo", monospace;
+	line-height: 140%;
+}
+.gstext p1 {
+	font-size: 120%;
+	font-weight: 900;
+}
+/*Grill*/
+#getstartcontent3 {
+	grid-column: 1 / span 8;
+	grid-row: 6 / span 2;
+}
+#getstartimage1 {
+	grid-column: 9 / span 3;
+	grid-row: 6 / span 6;
+}
+#getstartimage1 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+}
+/*Fuel*/
+#getstartcontent4 {
+	grid-column: 1 / span 8;
+	grid-row: 8 / span 2;
+}
+/*Tools*/
+#getstartcontent5 {
+	grid-column: 1 / span 8;
+	grid-row: 10 / span 2;
+}
+#getstartimage2 {
+	grid-column: 1 / span 3;
+	grid-row: 12 / span 6;
+}
+#getstartimage2 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+	margin: 2% 5%;
+}
+/*What you'll want*/
+#getstartcontent6 {
+	grid-column: 5 / span 2;
+	grid-row: 12;
+	padding: 0 5%;
+}
+#getstartcontent6 p {
+	font-family: "typo", monospace;
+	font-weight: 600;
+}
+/*More Tools*/
+#getstartcontent7 {
+	grid-column: 4 / span 8;
+	grid-row: 13 / span 2;
+}
+/*Grill Care*/
+#getstartcontent8 {
+	grid-column: 1 / span 8;
+	grid-row: 15 / span 2;
+}
+#getstartimage3 {
+	grid-column: 9 / span 3;
+	grid-row: 15 / span 6;
+}
+#getstartimage3 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+}
+/*Heat*/
+#getstartcontent9 {
+	grid-column: 4 / span 8;
+	grid-row: 17 / span 2;
+}
+#getstartimage4 {
+	grid-column: 1 / span 3;
+	grid-row: 17 / span 6;
+}
+#getstartimage4 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+	margin: 2% 5%;
+}
+/*Tools*/
+#getstartcontent10 {
+	grid-column: 4 / span 8;
+	grid-row: 19 / span 2;
+}
+
+
+
+/*------------------------------Recipes Page--------------------------------*/
+/*Recipes Buttons*/
+.recipes_buttons{
+	position: relative;
+	margin: 3% 5% 15% 5%;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 5px rgba(50,0,0,0.85);
+}
+.recipes_buttons p{
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	text-align: center;
+	color: white;
+	font-family: "deadsaloon", sans-serif;
+	font-size: 5vw;
+	text-shadow:
+		2px 5px 5px black,
+		-5px -2px 5px black,
+		-1px -1px 0 black,  
+    	1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+#burgercontainer {
+	grid-column: 1 / span 4;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#burgersimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+#porkcontainer {
+	grid-column: 5 / span 4;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#porkimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+#brisketcontainer {
+	grid-column: 9 / span 4;
+	grid-row: 5 / span 2;
+	z-index: 2;
+	overflow: hidden;
+}
+#brisketimg {
+	display: block;
+	width: 120%;
+	object-fit: contain;
+}
+
+
+
+
+
+/*-----------------------------Individual Recipes-------------------------------*/
+.rpc1 {
+	grid-column: 2 / span 5;
+	grid-row: 4 / span 2;
+	font-family: "typo", monospace;
+}
+.rpc1 h1 {
+	font-size: 150%;
+	padding: 0 5%;
+}
+.rpc1 h2 {
+	font-size: 120%;
+}
+.rpc1 p {
+	font-size: 75%;
+}
+.rpcv {
+	grid-column: 7 / span 4;
+	grid-row: 4 / span 2;
+	margin: 2% 0 4% 0;
+}
+.rpci1 {
+	grid-column: 2 / span 3;
+	grid-row: 6 / span 2;
+}
+.rpci1 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+}
+.rpc2 {
+	grid-column: 5 / span 6;
+	grid-row: 6 / span 2;
+	font-family: "typo", monospace;
+	line-height: 150%
+}
+.rpc3 {
+	grid-column: 2 / span 6;
+	grid-row: 8 / span 2;
+	font-family: "typo", monospace;
+	line-height: 150%;
+}
+.rpci2 {
+	grid-column: 9 / span 3;
+	grid-row: 8 / span 2;
+}
+.rpci2 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+}
+.rpc4 {
+	grid-column: 2 / span 10;
+	grid-row: 9;
+	font-family: "typo", monospace;
+	line-height: 150%;
+}
+
+
+
+
+
+
+
+/*----------------------------------Share-------------------------------------*/
+/*Text background*/
+#sharetextbg {
+	grid-column: 1 / span 12;
+	grid-row: 2 / span 11;
+}
+#shareheader2 {
+	grid-column: 2 / span 10;
+	grid-row: 4;
+	padding: 1%;
+	text-align: center;
+	line-height: 180%
+}
+#shareheader2 p1 {
+	font-family: "typo", monospace;
+	font-size: 180%;
+	font-weight: 600;
+}
+#shareheader2 p2 {
+	font-family: "typo", monospace;
+	font-size: 90%;
+	font-weight: 600;
+}
+#shareheader2 p3 {
+	font-family: "typo", monospace;
+	font-size: 120%;
+	font-weight: 600;
+}
+/*--Form--*/
+#share {
+	grid-column: 3 / span 8;
+	grid-row: 5;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(50,0,0,0.85);
+	padding: 3%;
+	margin: 1% 0 5% 0;
+
+}
+#share_form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#share_form label {
+	font-family: "typo", monospace;
+	font-size: 90%;
+	font-weight: 600;
+	float: left;
+	width: 100%;
+}
+.inputs {
+
+}
+#subj {
+	width: 80%;
+}
+#message {
+	height: 10em;
+	width: 100%;
+	
+}
+.formbuttons {
+	
+}
+
+
+
+
+/*-----------------------------------Footer------------------------------------*/
+#footer {
+	grid-column: 1 / span 12;
+	grid-row: 50;
+	background-image: url("coal1920x1440.jpg");
+	background-size: cover;
+	box-shadow: 0 0 15px 10px #141414;
+	margin: 5% 0 0 0;
+}
+#footer p {
+	text-align: center;
+	color: #D5C1A9;
+	font-family: "deadsaloon", sans-serif;
+	font-size: 100%;
+	border-radius: 5px;
+	text-shadow:
+		-2px 2px 5px black,
+		-1px -1px 0 black,  
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+	
+}
+
+
+

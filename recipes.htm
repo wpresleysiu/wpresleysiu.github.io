@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Final Course Project
+Home Barbeque Hero Website
+Recipes Page
+Author: William Presley
+School/Term: Southern Illinois University, Fall 2021
+Developed: Nov 7, 2021
+Tested: 
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Getting Started</title>
+	<meta name="description" content="Everything you need to start barbequeing">
+	<meta name="keywords" content="bbq, barbeque, barbecue, grill, grilling, smoker">
+	<link rel="shortcut icon" href="HBHicon.ico"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="grid_layout">
+<!--Navbar-->
+		<nav id="navbarcontainer">
+			<div class="content">
+				<ul class="links">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="getstart.htm">Getting Started</a></li>
+					<li>
+						<a href="recipes.htm" class="dropdown">Recipes</a>
+						<input type="checkbox" id="dropdown">
+						<label for="dropdown">Recipes</label>
+						<ul>
+							<li><a href="burgerrecipe.htm">Burgers</a></li>
+							<li><a href="porkrecipe.htm">Pulled Pork</a></li>
+							<li><a href="brisketrecipe.htm">Brisket</a></li>
+						</ul>
+					</li>
+					<li><a href="share.htm">Share</a></li>
+				</ul>
+			</div>
+		</nav>
+<!--Header-->
+		<div id="logo2container">
+			<img id="logo2" src="HBH icon.png" alt="Home Barbeque Hero"/>
+		</div>
+		<div id="recipesheader" class="page_name_header">
+			<p>Recipes</p>
+		</div>
+		
+<!--Links-->
+		<div id="burgercontainer" class="recipes_buttons">
+			<a href="burgerrecipe.htm">
+				<img id="burgersimg" src="burger800x640.jpg" alt="Burgers"/>
+				<p>Burgers</p>
+			</a>
+		</div>
+		<div id="porkcontainer" class="recipes_buttons">
+			<a href="porkrecipe.htm">
+				<img id="porkimg" src="pulledporksandwich800x640.jpg" alt="Pulled Pork"/>
+				<p>Pulled Pork</p>
+			</a>
+		</div>
+		<div id="brisketcontainer" class="recipes_buttons">
+			<a href="brisketrecipe.htm">
+				<img id="brisketimg" src="brisket800x640.jpg" alt="Brisket"/>
+				<p>Brisket</p>
+			</a>
+		</div>
+
+
+		
+<!--Footer-->
+		<div id="footer">
+			<p>
+				Home Barbeque Hero<br>
+				Created by William Presley at <a href="https://siu.edu/">Southern Illinois University</a>
+			</p>
+		</div>		
+	</div>
+</body>
+
+</html>
